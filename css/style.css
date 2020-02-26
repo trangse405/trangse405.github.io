@@ -36,6 +36,30 @@
 */
 /* BASE - Base tyles, Variables, Mixins, etc. */
 
+.notification {
+/*  background-color: white;*/
+  color: black;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  height: auto;
+  width: 150px;
+  text-align: center;
+}
+
+.notification:hover {
+  background: white;
+}
+
+.notification .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
 
 
 body {
