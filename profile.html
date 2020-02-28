@@ -61,7 +61,7 @@
               <div class="col-md-6 col-sm-6 col-xs-6">
 			    <div class="aa-header-right" style="text-align: left;">
                   <a href="post-news.html" class="aa-register">KÊNH RAO TIN</a>
-                  <a href="index-renter.html" class="aa-login">QUẢN LÝ NHÀ ĐANG THUÊ</a>
+                  <a href="html-manage/index-renter.html" class="aa-login">QUẢN LÝ NHÀ ĐANG THUÊ</a>
                 </div>           
               </div>
               <div class="col-md-6 col-sm-6 col-xs-6">
@@ -133,94 +133,24 @@
   <!-- Start Properties  -->
   <section id="aa-properties">
     <div class="container">
-      <div class="row">
+      <div class="row" style="padding: 0px;">
         <div class="col-md-3">
           <div class="aa-properties-content">            
             <!-- Start properties content body -->
      		<img style="width: 260px; border-radius: 50%; border-color: #000000; border: 1px;" src="img/78-785878_batman-icon-batman-avatar-icon-hd-png-download.png">
 			  <div class="vertical-menu">
-				  <a href="#" class="active">Hồ sơ của tôi</a>
-				  <a href="#">Thay đổi mật khẩu</a>
-				  <a href="#">Thông báo</a>
+				  <a href="html-iframe-profile/profile1.html" target="rightframe" class="active">Hồ sơ của tôi</a>
+				  <a href="html-iframe-profile/change-password.html" target="rightframe">Thay đổi mật khẩu</a>
+				  <a href="#" target="rightframe">Thông báo</a>
 				</div>
           </div>
         </div>
         <!-- Start properties sidebar -->
         <!-- Start properties sidebar -->
-        <div class="col-md-9">
-          <aside class="aa-properties-sidebar">
-            <!-- Start Single properties sidebar -->
-            <div class="aa-properties-single-sidebar">
-              <h2>Hồ sơ của tôi</h2>
-				<p><b>Quản lý hồ sơ để bảo mật tài khoản</b></p>
-              <form action="">
-				  <table style="width: 100%;">
-				  	<tr>
-						<th style="width: 20%; vertical-align: top;">Tên</th>
-						<td><input style="width: 300px;" type="text" name="name"><br><br></td>
-					</tr>
-				  	<tr>
-						<th style="vertical-align: top;">Email</th>
-						<td><input style="width: 300px;" type="email" name="email" aria-required="true" value="trangtttse05109@fpt.edu.vn" ><br><br></td>
-					</tr>
-				  	<tr>
-						<th style="vertical-align: top;">Số điện thoại</th>
-						<td><input style="width: 300px;" type="text" name="phone" value="0979409911"><br><br></td>
-					</tr>
-				  	<tr>
-						<th style="vertical-align: top;">Giới tính</th>
-						<td><input type="radio" name="gender" value="male" checked> Nam<br>
-							<input type="radio" name="gender" value="female"> Nữ <br>
-							<input type="radio" name="gender" value="other"> Khác<br><br></td>
-					</tr>
-				  	<tr>
-						<th style="vertical-align: top;">Ngày sinh</th>
-						<td style="width: 10px;">
-						<label>Ngày</label>
-							<select id="day" >
-							  <option></option>
-							</select> &nbsp;&nbsp;
-						
-						<label  >Tháng</label>
-							<select id="month" onchange="changeMonth()">
-							  <option>1</option>
-							   <option>2</option>
-							   <option>3</option>
-							   <option>4</option>
-							   <option>5</option>
-							   <option>6</option>
-							   <option>7</option>
-							   <option>8</option>
-							   <option>9</option>
-							   <option>10</option>
-							   <option>11</option>
-							   <option>12</option>
-							</select> &nbsp;&nbsp;
-						
-							<label >Năm</label>
-							<select id="year" onchange="changeMonth()">
-							  <option></option>
-							</select>
-						</td> <br><br><br>
-					  </tr>
-				  	<tr>
-						<th style="vertical-align: top;"><br>Địa chỉ</th>
-						<td><br><textarea id="address" rows="4" cols="35">aaaaaaaaa
-							aaaaaaaaaaaaaa
-							aaaaaaaaaaaaaaaa
-							</textarea>
-						</td>
-					</tr>
-				  </table>
-				  <div style="width: 160px;">
-                <div class="aa-single-advance-search">
-                  <input style="font-size: 14px;" class="aa-search-btn" type="submit" value="Lưu thông tin">
-                </div>
-              </div>
-              </form>
-            </div> 
-          </aside>
-        </div>
+		<div class="col-md-9" style="padding: 0px; margin: 0px;">
+			<iframe name = "rightframe" src = "html-iframe-profile/profile1.html" scrolling="no"  style="border: 0px; padding: 0px; margin: 0px; width: 100%; height:650px;"></iframe>
+		</div>
+<!---aaaaaaaa--->
       </div>
     </div>
   </section>
