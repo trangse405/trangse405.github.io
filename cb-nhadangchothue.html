@@ -146,7 +146,7 @@
             </div>
             <!-- Start properties content body -->
 			<div class="form-popup" id="myForm">
-			  <form action="/action_page.php" class="form-container">
+			  <form action="/action_page.php" class="form-container" >
 				  <div class="col-md-12">
 				  	<div class="aa-properties-content">
 				  	<h2 class="text-left" style="border-bottom: solid 1px;">Người thuê</h2>	
@@ -193,15 +193,72 @@
 							</tr>
 						</table>
 					<h2 class="text-left" style="border-bottom: solid 1px;">Hóa đơn hàng tháng</h2>
-						<table style="border: 1px solid; border-color: rgba(136,136,136,1)">
-							<tr>
-								<td>a</td>
-								<td>b</td>
-							</tr>
-						</table>
-					</div>
+						<table class="table table-bordered">
+						<thead>
+						  <tr>
+							<th style="text-align: center">Tháng</th>
+							<th style="text-align: center">Số điện</th>
+							<th style="text-align: center">Đơn giá điện</th>
+							<th style="text-align: center">Số nước</th>
+							<th style="text-align: center">Đơn giá nước</th>
+							<th style="text-align: center">Internet</th>
+							<th style="text-align: center">Tiền nhà</th>
+							<th style="text-align: center">Tổng</th>
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr>
+							<td>1</td>
+							<td>1000</td>
+							<td>1000</td>
+							<td>1000</td>
+							<td>1000</td>
+							<td>1000</td>
+							<td>1000</td>
+							<td>1000</td>
+						  </tr>
+						</tbody>
+					  </table>
+					<h2 class="text-left" style="border-bottom: solid 1px;">Thống kê doanh thu</h2>
+						<p class="text-left"><b>Tổng tiền đã thu: <span style="color: red">36.000.000VNĐ</span></b></p>
+						<p class="text-left"><b>Tổng tiền thu được trên hợp đồng:</b> <span style="color: red"><b>100.000.000VNĐ</b></span></p>
+					<h2 class="text-left" style="border-bottom: solid 1px;">Quản lý báo cáo hỏng hóc</h2>
+					<table class="table table-bordered">
+						<thead>
+						  <tr>
+							<th style="text-align: center">Ngày</th>
+							<th style="text-align: center">Mô tả</th>
+							<th style="text-align: center">Trạng thái</th>
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr>
+							<td>1/3/2018</td>
+							<td>Hỏng đèn tầng 1</td>
+							<td style="color: rgb(92,184,92)">Đã xử lý</td>
+						  </tr>
+						  <tr>
+							<td>1/3/2018</td>
+							<td>Hỏng đèn tầng 1</td>
+							<td style="color: rgb(240,173,78)">Đang chờ xử lý</td>
+						  </tr>
+						  <tr>
+							<td>1/3/2018</td>
+							<td>Hỏng đèn tầng 1</td>
+							<td style="color: rgb(201,48,44)">Đã hủy</td>
+						  </tr>
+						</tbody>
+					  </table>
+						<table style="width: 100%; font-size: 14px;">
+					 	<tr>
+							<th>
+								<button type="button" class="btn btn-danger">Chấm dứt hợp đồng</button>
+							</th>
+						</tr>
+					 </table>
+					</div> 
 				  </div>				  
-				<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+				<button type="button" class="btn cancel" onclick="closeForm()" style="color: white;">Đóng</button>
 			  </form>
 			</div>	
 <!--pop-up-->
@@ -218,8 +275,7 @@
                       <div class="aa-properties-about" style="text-align: justify">
                        <h3><a href="details-property.html">Nhà riêng số 1</a></h3>
 						  <p>Thời gian còn lại của hợp đồng: <span><b>5 tháng</b></span></p>
-						  <p>Tổng doanh thu trên căn: <b>36.000.000VNĐ</b></p>
-						 
+						  <p>Tổng doanh thu trên căn: <b>36.000.000VNĐ</b></p>						 
                       </div>
 						</div>
 						<div class="col-md-4" style="height: 90px;text-align: right"><br><br>
@@ -333,6 +389,13 @@ function openForm() {
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
+	
+function ESCclose(evt) {
+  if (evt.keyCode == 27) {
+	  window.close();
+  }
+}	
+	
 </script>	 
 <script>
 	var today = new Date().toISOString().split('T')[0];
