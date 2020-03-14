@@ -49,24 +49,32 @@
     <a class="scrollToTop" href="#"><i class="fa fa-angle-double-up"></i></a>
   <!-- END SCROLL TOP BUTTON -->
 
-
   <!-- Start header section -->
-<header id="aa-header">  
+  <header id="aa-header"  style="border-bottom: solid 1px rgba(136,136,136,0.5); ">  
     <div class="container">
-      <div class="row">
+      <div class="row"
         <div class="col-md-12">
           <div class="aa-header-area">
             <div class="row">
               <div class="col-md-6 col-sm-6 col-xs-6">
-			    <div class="aa-header-right" style="text-align: left;">
-                  <a href="post-news.html" class="aa-register">KÊNH RAO TIN</a>
-                  <a href="html-manage/index-renter.html" class="aa-login">QUẢN LÝ NHÀ ĐANG THUÊ</a>
-                </div>           
+                <div class="aa-header-right" style="text-align: left;">
+                  <a href="cb-index.html" target= "_blank" class="aa-register" style="color: rgb(85,85,85);"><b>HỆ THỐNG ĐĂNG TIN</b></a>
+                  <a href="cs-index.html" class="aa-login" style="color: rgb(85,85,85);"><b>HỆ THỐNG QUẢN LÝ NHÀ ĐANG THUÊ</b></a> 
+                  <!--<div class="aa-header-left">
+                  <div class="aa-telephone-no">
+                    <span class="fa fa-phone"></span>
+                    0979401199
+                  </div>
+                  <div class="aa-email hidden-xs">
+                    <span class="fa fa-envelope-o"></span> TrangTTTSE05109@FPT.EDU.VN
+                  </div>
+                </div>   <!-->  
+                </div>              
               </div>
               <div class="col-md-6 col-sm-6 col-xs-6">
                 <div class="aa-header-right">
-                  <a href="sign-up.html" class="aa-register">ĐĂNG KÝ</a>
-                  <a href="log-in.html" class="aa-login">ĐĂNG NHẬP</a>
+                  <a href="sign-up.html" class="aa-register" style="color: rgb(85,85,85);"><b>ĐĂNG KÝ</b></a>
+                  <a href="log-in.html" class="aa-login" style="color: rgb(85,85,85);"><b>ĐĂNG NHẬP</b></a>
                 </div>
               </div>
             </div>
@@ -77,8 +85,8 @@
   </header>
   <!-- End header section -->
   <!-- Start menu section -->
-  <section id="aa-menu-area">
-    <nav class="navbar navbar-default main-navbar" role="navigation">  
+  <section id="aa-menu-area" style="background-color: white">
+    <nav class="navbar navbar-default main-navbar" role="navigation" style="border-bottom: solid 2px rgb(136,136,136); ">  
       <div class="container">
         <div class="navbar-header">
           <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
@@ -96,7 +104,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right aa-main-nav">
-            <li class="active"><a href="index.html">Trang Chủ</a></li>
+		    <li class="active"><a href="index.html">Trang Chủ</a></li>
              <li class="dropdown">
               <a class="dropdown-toggle" href="for-rent.html">Bất động sản cho thuê <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">                
@@ -107,34 +115,21 @@
             </li>
 			<li>
 				<a class="notification" href="notifications.html"><span class="glyphicon glyphicon-bell"></span> Thông báo<span  class="badge">99</span> </a></li>
+			<li class="dropdown">
+              <a class="dropdown-toggle" href="#"><img alt="Doanh thu" style="width: 25px; border-radius: 50%" src="img/hinh-anh-chat-ngau-dep.jpg"> DucTHSE05016 <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">                
+                <li><a href="#">Đăng xuất</a></li>
+              </ul>
+            </li>
           </ul>
         </div><!--/.nav-collapse -->       
-      </div>          
-    </nav> 
+      </div>
+    </nav>
   </section>
   <!-- End menu section -->
-
-  <!-- Start Proerty header  -->
-
-  <section id="aa-property-header">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="aa-property-header-inner">
-            <h2>Danh Sách Bất Động Sản</h2>
-            <ol class="breadcrumb">
-            <li><a href="#">Trang Chủ</a></li>            
-            <li class="active">Bất Động Sản Cho Thuê</li>
-          </ol>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> 
-  <!-- End Proerty header  -->
 	
   <!-- Start Properties  -->
-  <section id="aa-properties">
+  <section id="aa-properties" style="margin-top: 150px; text-align: center">
     <div class="container">
       <div class="row">
         <div class="col-md-8">
@@ -153,13 +148,13 @@
                 </form>
               </div>
               <div class="aa-properties-content-head-right">
-                <a id="aa-grid-properties" href="#"><span class="fa fa-th"></span></a>
                 <a id="aa-list-properties" href="#"><span class="fa fa-list"></span></a>
+                <a id="aa-grid-properties" href="#"><span class="fa fa-th"></span></a>
               </div>            
             </div>
             <!-- Start properties content body -->
             <div class="aa-properties-content-body">
-              <ul class="aa-properties-nav">
+              <ul class="aa-properties-nav aa-list-view">
                 <li>
                   <article class="aa-properties-item">
                     <a class="aa-properties-item-img" href="details-property.html">

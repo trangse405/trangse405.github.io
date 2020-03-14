@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>Quản lý nhà đang cho thuê | Cyber Boss</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    
+   
+    <!-- Font awesome -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">   
+    <!-- slick slider -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <!-- price picker slider -->
+    <link rel="stylesheet" type="text/css" href="css/nouislider.css">
+    <!-- Fancybox slider -->
+    <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" /> 
+    <!-- Theme color -->
+    <link id="switcher" href="css/theme-color/default-theme.css" rel="stylesheet">     
+
+    <!-- Main style sheet -->
+    <link href="css/style.css" rel="stylesheet">        <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body class="aa-price-range">  
+  <!-- Pre Loader -->
+  <div id="aa-preloader-area">
+    <div class="pulse"></div>
+  </div>
+  <!-- SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#"><i class="fa fa-angle-double-up"></i></a>
+  <!-- END SCROLL TOP BUTTON -->
+
+  <!-- Start header section -->
+  <header id="aa-header"  style="border-bottom: solid 1px rgba(136,136,136,0.5); ">  
+    <div class="container">
+      <div class="row"
+        <div class="col-md-12">
+          <div class="aa-header-area">
+            <div class="row">
+              <div class="col-md-6 col-sm-6 col-xs-6">
+                <div class="aa-header-right" style="text-align: left;">
+                  <a href="cb-index.html" class="aa-register" style="color: rgb(85,85,85);"><b>HỆ THỐNG ĐĂNG TIN</b></a>
+                  <a href="cs-index.html" class="aa-login" style="color: rgb(85,85,85);"><b>HỆ THỐNG QUẢN LÝ NHÀ ĐANG THUÊ</b></a>  
+                </div>              
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-6">
+                <div class="aa-header-right">
+                  <a href="sign-up.html" class="aa-register" style="color: rgb(85,85,85);"><b>ĐĂNG KÝ</b></a>
+                  <a href="log-in.html" class="aa-login" style="color: rgb(85,85,85);"><b>ĐĂNG NHẬP</b></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End header section -->
+  <!-- Start menu section -->
+  <section id="aa-menu-area" style="background-color: white">
+    <nav class="navbar navbar-default main-navbar" role="navigation" style="border-bottom: solid 2px rgb(136,136,136); ">  
+      <div class="container">
+        <div class="navbar-header">
+          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- LOGO -->                                               
+          <!-- Text based logo -->
+           <a class="navbar-brand aa-logo" href="cb-index.html"> Cyber <span>Boss</span></a>
+           <!-- Image based logo -->
+           <!-- <a class="navbar-brand aa-logo-img" href="index.html"><img src="img/logo.png" alt="logo"></a> -->
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="top-menu" class="nav navbar-nav navbar-right aa-main-nav">
+			<li>
+				<a class="notification" href="notifications.html"><span class="glyphicon glyphicon-bell"></span> Thông báo<span  class="badge">99</span> </a></li>
+			<li class="dropdown">
+              <a class="dropdown-toggle" href="#"><img alt="Doanh thu" style="width: 25px; border-radius: 50%" src="img/hinh-anh-chat-ngau-dep.jpg"> DucTHSE05016 <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">                
+                <li><a href="#">Đăng xuất</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->       
+      </div>
+    </nav>
+  </section>
+  <!-- End menu section -->
+
+  <!-- Start Properties  -->
+  <section id="aa-properties" style="margin-top: 150px; text-align: center">
+    <div class="container">
+      <div class="row" style="padding: 0px;">
+        <div class="col-md-3">
+          <div class="aa-properties-content">            
+            <!-- Start properties content body -->
+			  <div class="vertical-menu">
+				  <a href="cb-dangtin.html">Đăng tin</a>
+				  <a href="cb-quanlytindadang.html">Quản lý tin đã đăng</a>
+				  <a href="cb-nhadangtrentrang.html">Nhà đang trên trang</a>
+				  <a href="cb-nhadangchothue.html" class="active">Nhà đang cho thuê</a>
+				  <a href="cb-doanhthu.html">Doanh thu</a>
+				  <a href="cb-thongbao.html">Thông báo</a>
+				</div>
+          </div>
+        </div>
+        <!-- Start properties sidebar -->
+        <!-- Start properties sidebar -->
+		<div class="col-md-9" style="padding: 20px; margin: 0px;background-color: rgb(248,248,248);">
+			<div class="aa-properties-content">
+				  <h2 class="text-left">Số căn đang cho thuê: <span style="color: red">3</span></h2>				  
+				  <h4 class="text-left" style="border-bottom: solid 1px; border-bottom-color: rgb(89,171,227)">Doanh thu tháng kế tiếp: <span style="color: red;"><b>45.000.000VNĐ</b></span></h4>
+            <!-- start properties content head -->
+            <div class="aa-properties-content-head">              
+              <div class="aa-properties-content-head-right">
+                <form action="" class="aa-sort-form">
+                  <label for="">Sắp xếp</label>
+                  <select name="">
+                    <option value="1" selected="Default">Mặc định</option>
+                    <option value="2">Tên</option>
+                    <option value="3">Giá</option>
+                    <option value="4">Ngày đăng</option>
+                  </select>
+                </form>
+              </div>         
+            </div>
+            <!-- Start properties content body -->
+			<div class="form-popup" id="myForm">
+			  <form action="/action_page.php" class="form-container">
+				  <div class="col-md-12">
+				  	<div class="aa-properties-content">
+				  	<h2 class="text-left" style="border-bottom: solid 1px;">Người thuê</h2>	
+						<table style="margin: 50px 0px 50px 0px; text-align: left; width: 500px">
+							<tr>
+								<th rowspan="6">
+                     				<img src="img/hinh-anh-chat-ngau-dep.jpg"  alt="img" style="width: 200px; height: 200px">
+								</th>
+								<td style="padding-right: 50px"><b>Họ và tên:</b> Trần Huy Đức</td>
+							</tr>
+							<tr>
+								<td><b>Quê quán:</b> Hải Dương</td>
+							</tr>
+							<tr>
+								<td><b>Giới tính:</b> Nam</td>
+							</tr>
+							<tr>
+								<td><b>Nghề nghiệp:</b>  Chuyên gia giấc ngủ</td>
+							</tr>
+							<tr>
+								<td><b>Số điện thoại:</b>  01626112855</td>
+							</tr>
+							<tr>
+								<td><b>Email:</b>   ducthse05016@fpt.edu.vn</td>
+							</tr>
+						</table>
+					<h2 class="text-left" style="border-bottom: solid 1px;">Chi tiết hợp đồng</h2>
+						<table  style="margin: 0px 0px 10px 0px; text-align: left; width: 500px">
+							<tr>
+								<td style="width: 320px">								
+									<h3 style="color: rgba(252,89,26,1.00); font-weight: 100; text-align: justify">Các điều khoản và pháp luật:</h3>
+								</td>
+								<td>
+									<button type="button" class="btn btn-info">Click để xem chi tiết</button>								
+								</td>
+							</tr>
+						</table>
+						<table style="margin: 0px 0px 50px 0px; text-align: left; width: 800px">
+							<tr>
+								<td>Thời hạn kí kết: </td>
+								<td>Từ 11/2/2018</td>
+								<td>Đến 11/8/2018</td>
+								<td><span style="color: rgba(77,193,23,1.00)"> <strong>Còn lại: </strong> 125 ngày </span></td>
+							</tr>
+						</table>
+					<h2 class="text-left" style="border-bottom: solid 1px;">Hóa đơn hàng tháng</h2>
+						<table style="border: 1px solid; border-color: rgba(136,136,136,1)">
+							<tr>
+								<td>a</td>
+								<td>b</td>
+							</tr>
+						</table>
+					</div>
+				  </div>				  
+				<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+			  </form>
+			</div>	
+<!--pop-up-->
+				
+            <div class="aa-properties-content-body">
+              <ul class="aa-properties-nav aa-list-view">
+                <li>
+                  <article class="aa-properties-item">
+                    <a style="width: 200px;" class="aa-properties-item-img" href="details-property.html">
+                      <img src="img/item/6.jpg"  alt="img" style="width: 200px; height: 160px">
+                    </a>
+                    <div style="width: 637px" class="aa-properties-item-content">
+						<div class="col-md-8">
+                      <div class="aa-properties-about" style="text-align: justify">
+                       <h3><a href="details-property.html">Nhà riêng số 1</a></h3>
+						  <p>Thời gian còn lại của hợp đồng: <span><b>5 tháng</b></span></p>
+						  <p>Tổng doanh thu trên căn: <b>36.000.000VNĐ</b></p>
+						 
+                      </div>
+						</div>
+						<div class="col-md-4" style="height: 90px;text-align: right"><br><br>
+							<button style="width: 120px" type="button" class="btn btn-info" onclick="openForm()">Xem chi tiết</button><br>	
+							(ấn vào "Xem chi tiết" nha mấy má)
+						</div>
+                      <div class="aa-properties-detial">
+						  <div class="col-md-7"><span class="aa-price"> <strong>Ngày thu tiền kế tiếp: </strong> 15 ngày </span></div>
+						<div class="col-md-4" style="text-align: right; padding-right: 5px">
+						</div>	
+						</div>
+					  </div>
+				</article>
+				</li>
+                <li>
+                  <article class="aa-properties-item">
+                    <a style="width: 200px;" class="aa-properties-item-img" href="details-property.html">
+                      <img src="img/item/6.jpg"  alt="img" style="width: 200px; height: 160px">
+                    </a>
+                    <div style="width: 637px;" class="aa-properties-item-content">
+						<div class="col-md-7">
+                      <div class="aa-properties-about" style="text-align: justify">
+                        <h3><a href="details-property.html">Nhà riêng số 1</a></h3>
+						  <p>Thời gian còn lại của hợp đồng: <span style="color: red"><b>12 ngày</b></span></p>
+						  <p>Tổng doanh thu trên căn: <b>66.000.000VNĐ</b></p>
+                      </div>
+						</div>
+						<div class="col-md-5" style="height: 90px;text-align: right;"><br><br>
+							<button style="width: 120px;" type="button" class="btn btn-info" onclick="openForm()">Xem chi tiết</button>		
+						</div>
+                      <div class="aa-properties-detial">
+						  <div class="col-md-7"><span class="aa-price" style="color: rgba(77,193,23,1.00)"> <strong>Ngày thu tiền kế tiếp: </strong> 12 ngày </span></div>
+						<div class="col-md-5" style="text-align: right; padding-right: 5px">
+						</div>	
+						</div>
+					  </div>
+				</article>
+				</li>                
+				</ul>
+            </div>
+            <!-- Start properties content bottom -->
+            <div class="aa-properties-content-bottom">
+              <nav>
+                <ul class="pagination">
+                  <li>
+                    <a href="#" aria-label="Previous">
+                      <span aria-hidden="true">«</span>
+                    </a>
+                  </li>
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li class="active"><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li>
+                    <a href="#" aria-label="Next">
+                      <span aria-hidden="true">»</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+		</div>
+<!---aaaaaaaa--->
+      </div>
+    </div>
+  </section>
+  <!-- / Properties  -->
+  <!-- Footer -->
+  <footer id="aa-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+        <div class="aa-footer-area">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="aa-footer-left">
+               <p>Cyber <a rel="nofollow" href="http://www.markups.io/">Team</a></p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="aa-footer-middle">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+              <div class="aa-footer-right">
+                <a href="#">Home</a>
+                <a href="#">Support</a>
+                <a href="#">License</a>
+                <a href="#">FAQ</a>
+                <a href="#">Privacy & Term</a>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </footer>
+  <!-- / Footer -->
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>	 
+<script>
+	var today = new Date().toISOString().split('T')[0];
+    document.getElementsByName("start-date")[0].setAttribute('min', today);
+</script>
+
+  <!-- jQuery library -->
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+  <script src="js/jquery.min.js"></script>   
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.js"></script>   
+  <!-- slick slider -->
+  <script type="text/javascript" src="js/slick.js"></script>
+  <!-- Price picker slider -->
+  <script type="text/javascript" src="js/nouislider.js"></script>
+   <!-- mixit slider -->
+  <script type="text/javascript" src="js/jquery.mixitup.js"></script>
+  <!-- Add fancyBox -->        
+  <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+  <!-- Custom js -->
+  <script src="js/custom.js"></script> 
+
+  </body>
+</html>
