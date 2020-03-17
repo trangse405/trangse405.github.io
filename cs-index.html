@@ -53,15 +53,17 @@
   <!-- END SCROLL TOP BUTTON -->
 
 
-  <!-- Start header section -->
-  <header id="aa-header">
+  <header id="aa-header"  style="border-bottom: solid 2px rgb(136,136,136); ">  
     <div class="container">
-      <div class="row">
+      <div class="row"
         <div class="col-md-12">
           <div class="aa-header-area">
             <div class="row">
               <div class="col-md-6 col-sm-6 col-xs-6">
-                <div class="aa-header-left">
+                <div class="aa-header-right" style="text-align: left;">
+                  <a href="cb-index.html" class="aa-register" style="color: rgb(85,85,85);"><b>HỆ THỐNG ĐĂNG TIN</b></a>
+                  <a href="cs-index.html" class="aa-login" style="color: rgb(85,85,85);"><b>HỆ THỐNG QUẢN LÝ NHÀ ĐANG THUÊ</b></a> 
+                  <!--<div class="aa-header-left">
                   <div class="aa-telephone-no">
                     <span class="fa fa-phone"></span>
                     0979401199
@@ -69,12 +71,13 @@
                   <div class="aa-email hidden-xs">
                     <span class="fa fa-envelope-o"></span> TrangTTTSE05109@FPT.EDU.VN
                   </div>
-                </div>
+                </div>   <!-->  
+                </div>              
               </div>
               <div class="col-md-6 col-sm-6 col-xs-6">
                 <div class="aa-header-right">
-                  <a href="sign-up.html" class="aa-register">Đăng ký</a>
-                  <a href="log-in.html" class="aa-login">Đăng nhập</a>
+                  <a href="sign-up.html" class="aa-register" style="color: rgb(85,85,85);"><b>ĐĂNG KÝ</b></a>
+                  <a href="log-in.html" class="aa-login" style="color: rgb(85,85,85);"><b>ĐĂNG NHẬP</b></a>
                 </div>
               </div>
             </div>
@@ -85,75 +88,42 @@
   </header>
   <!-- End header section -->
   <!-- Start menu section -->
-  <section id="aa-menu-area">
-    <nav class="navbar navbar-default main-navbar" role="navigation">
+  <section id="aa-menu-area" style="background-color: white">
+    <nav class="navbar navbar-default main-navbar" role="navigation" style="border-bottom: solid 2px rgb(136,136,136); ">  
       <div class="container">
         <div class="navbar-header">
           <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-            aria-expanded="false" aria-controls="navbar">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <!-- LOGO -->
+          <!-- LOGO -->                                               
           <!-- Text based logo -->
-          <a class="navbar-brand aa-logo" href="home.html"> Cyber <span>Place</span></a>
-          <!-- Image based logo -->
-          <!-- <a class="navbar-brand aa-logo-img" href="home.html"><img src="img/logo.png" alt="logo"></a> -->
+           <a class="navbar-brand aa-logo" href="cb-index.html"> Cyber <span>Service</span></a>
+           <!-- Image based logo -->
+           <!-- <a class="navbar-brand aa-logo-img" href="index.html"><img src="img/logo.png" alt="logo"></a> -->
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right aa-main-nav">
-            <li class="active"><a href="home.html">Trang Chủ</a></li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" href="bds-cho-thue.html">Bất động sản cho thuê <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="apartment-for-rent.html">Chung cư cho thuê</a></li>
-                <li><a href="apartment-for-rent.html">Nhà riêng cho thuê</a></li>
-                <li><a href="apartment-for-rent.html">Văn phòng cho thuê</a></li>
+			<li>
+				<a class="notification" href="notifications.html"><span class="glyphicon glyphicon-bell"></span> Thông báo<span  class="badge">99</span> </a></li>
+			<li class="dropdown">
+              <a class="dropdown-toggle" href="#"><img alt="Doanh thu" style="width: 25px; border-radius: 50%" src="img/hinh-anh-chat-ngau-dep.jpg"> DucTHSE05016 <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">                
+                <li><a href="#">Đăng xuất</a></li>
               </ul>
             </li>
-            <li><a href="gallery.html">GALLERY</a></li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="blog-archive.html">BLOG <span
-                  class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="blog-archive.html">BLOG</a></li>
-                <li><a href="blog-single.html">BLOG DETAILS</a></li>
-              </ul>
-            </li>
-            <li><a href="contact.html">CONTACT</a></li>
-            <li><a href="404.html">404 PAGE</a></li>
           </ul>
-        </div>
-        <!--/.nav-collapse -->
+        </div><!--/.nav-collapse -->       
       </div>
     </nav>
   </section>
   <!-- End menu section -->
 
-  <!-- Start Proerty header  -->
-
-  <section id="aa-property-header">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="aa-property-header-inner">
-            <h2>Cyber Service</h2>
-            <ol class="breadcrumb">
-              <li><a href="home.html">Trang Chủ</a></li>
-              <li class="active">Cyber Service</li>
-            </ol>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Proerty header  -->
-
   <!-- Start Properties  -->
-  <section id="aa-properties">
+  <section id="aa-properties" style="margin-top: 150px; text-align: center">
     <div class="container">
       <div class="row ">
         <!-- Start Quan ly Menu -->
@@ -254,6 +224,52 @@
                       </div>
                       <div class="aa-properties-detial">
                       <a href="cs-xemchitiet.html"><button type="button" class="btn btn-primary btn-lg">Xem chi tiết</button></a>
+                    </div>
+                    </div>
+                  </article>
+                </li>
+				  <li>
+                  <article class="aa-properties-item"> <a class="aa-properties-item-img" href="cs-xemchitiet.html">
+                      <img alt="img" src="img/item/3.jpg">
+                    </a>
+                    <div class="aa-properties-item-content">
+                      <div class="aa-properties-info">
+                        <span>5 Rooms</span>
+                        <span>2 Beds</span>
+                        <span>3 Baths</span>
+                        <span>1100 SQ FT</span>
+                      </div>
+                      <div class="aa-properties-about">
+                        <h3><a href="cs-xemchitiet.html">Biệt thự vùng ven biển Hòa Lạc</a></h3>
+                        <p>Thời hạn còn lại của hợp đồng : 3 tháng 5 ngày </p>
+                        <p>Thời hạn đóng tiền kế tiếp còn : <strong class="text-danger">Hết hạn</strong></p>
+                      </div>
+                      <div class="aa-properties-detial">
+                      <a href="cs-xemchitiet.html"><button type="button" class="btn btn-primary btn-lg">Xem chi tiết</button></a>
+                      <button type="button" class="btn btn-primary btn-lg btn-danger">Thanh toán ngay</button>
+                    </div>
+                    </div>
+                  </article>
+                </li>
+				  <li>
+                  <article class="aa-properties-item"> <a class="aa-properties-item-img" href="cs-xemchitiet.html">
+                      <img alt="img" src="img/item/3.jpg">
+                    </a>
+                    <div class="aa-properties-item-content">
+                      <div class="aa-properties-info">
+                        <span>5 Rooms</span>
+                        <span>2 Beds</span>
+                        <span>3 Baths</span>
+                        <span>1100 SQ FT</span>
+                      </div>
+                      <div class="aa-properties-about">
+                        <h3><a href="cs-xemchitiet.html">Biệt thự vùng ven biển Hòa Lạc</a></h3>
+                        <p>Thời hạn còn lại của hợp đồng : 3 tháng 5 ngày </p>
+                        <p>Thời hạn đóng tiền kế tiếp còn : <strong class="text-danger">Hết hạn</strong></p>
+                      </div>
+                      <div class="aa-properties-detial">
+                      <a href="cs-xemchitiet.html"><button type="button" class="btn btn-primary btn-lg">Xem chi tiết</button></a>
+                      <button type="button" class="btn btn-primary btn-lg btn-danger">Thanh toán ngay</button>
                     </div>
                     </div>
                   </article>
