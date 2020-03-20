@@ -62,16 +62,7 @@
               <div class="col-md-6 col-sm-6 col-xs-6">
                 <div class="aa-header-right" style="text-align: left;">
                   <a href="cb-index.html" class="aa-register" style="color: rgb(85,85,85);"><b>HỆ THỐNG ĐĂNG TIN</b></a>
-                  <a href="cs-index.html" class="aa-login" style="color: rgb(85,85,85);"><b>HỆ THỐNG QUẢN LÝ NHÀ ĐANG THUÊ</b></a> 
-                  <!--<div class="aa-header-left">
-                  <div class="aa-telephone-no">
-                    <span class="fa fa-phone"></span>
-                    0979401199
-                  </div>
-                  <div class="aa-email hidden-xs">
-                    <span class="fa fa-envelope-o"></span> TrangTTTSE05109@FPT.EDU.VN
-                  </div>
-                </div>   <!-->  
+                  <a href="cs-index.html" class="aa-login" style="color: rgb(85,85,85);"><b>HỆ THỐNG QUẢN LÝ NHÀ ĐANG THUÊ</b></a>  
                 </div>              
               </div>
               <div class="col-md-6 col-sm-6 col-xs-6">
@@ -125,11 +116,10 @@
   <!-- Start Properties  -->
   <section id="aa-properties" style="margin-top: 150px; text-align: center">
     <div class="container">
-      <div class="row ">
-        <!-- Start Quan ly Menu -->
-        <div class="col-md-2">
+      <div class="row" style="padding: 0px;">
+        <div class="col-md-3">
           <div class="panel-group">
-            <div class="panel panel-default">
+            <div class="panel panel-default"  style="background-color: rgb(89, 171,227)">
               <div class="panel-heading">
                 <h4 class="panel-title">
                   <a href="cs-index.html">Quản lý nhà thuê</a>
@@ -139,10 +129,12 @@
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h4 class="panel-title">
-                  <a data-toggle="collapse" href="#collapse1">Quản lý thông báo</a>
+					<a data-toggle="collapse" href="#collapse1" class="" aria-expanded="true">Quản lý thông báo</a>
+<!--                <a data-toggle="collapse" href="#collapse1">Quản lý thông báo</a>-->
                 </h4>
               </div>
-              <div id="collapse1" class="panel-collapse collapse">
+				<div id="collapse1" class="panel-collapse collapse in" aria-expanded="true" style="">
+<!--            <div id="collapse1" class="panel-collapse collapse">-->
                 <ul class="list-group">
                   <li class="list-group-item"><a href="cs-baocao.html">Quản lý báo cáo</a></li>
                   <li class="list-group-item"><a href="cs-payment.html">Thông báo đóng tiền</a></li>
@@ -151,19 +143,17 @@
               </div>
             </div>
           </div>
-
         </div>
-        <!-- End Quan ly Menu -->
-
-        <!-- Start Content -->
-        <div class="col-md-8">
-          <h3>Bạn đang thuê: <strong>2</strong> căn hộ </h3>
-          <div class="alert alert-danger">
+        <!-- Start properties sidebar -->
+        <!-- Start properties sidebar -->
+		<div class="col-md-9" style="padding: 20px; margin: 0px;background-color: rgb(248,248,248);">
+			<div class="aa-properties-content">
+				  <h2 class="text-left">Số căn đang thuê: <span style="color: red">4</span></h2>				  
+		  <div class="alert alert-danger">
             <strong>1</strong> căn hộ cần được <a href="#" class="alert-link">thanh toán</a>.
           </div>
-          <div class="aa-properties-content">
             <!-- start properties content head -->
-            <div class="aa-properties-content-head">
+			<div class="aa-properties-content-head">
               <div class="aa-properties-content-head-left">
                 <form action="" class="aa-sort-form">
                   <label for="">Sắp xếp</label>
@@ -180,7 +170,7 @@
                 <a id="aa-list-properties" href="#"><span class="fa fa-list"></span></a>
               </div>
             </div>
-            <!-- Start properties content body -->
+            <!-- Start properties content body -->				
             <div class="aa-properties-content-body">
               <ul class="aa-properties-nav">
                 <li>
@@ -282,7 +272,7 @@
                 <ul class="pagination">
                   <li>
                     <a href="#" aria-label="Previous">
-                      <span aria-hidden="true">&laquo;</span>
+                      <span aria-hidden="true">«</span>
                     </a>
                   </li>
                   <li><a href="#">1</a></li>
@@ -292,20 +282,18 @@
                   <li><a href="#">5</a></li>
                   <li>
                     <a href="#" aria-label="Next">
-                      <span aria-hidden="true">&raquo;</span>
+                      <span aria-hidden="true">»</span>
                     </a>
                   </li>
                 </ul>
               </nav>
             </div>
           </div>
-        </div>
-        <!-- End Content -->
-
+		</div>
+<!---aaaaaaaa--->
       </div>
     </div>
   </section>
-
   <!-- / Properties  -->
   <!-- Footer -->
   <footer id="aa-footer">

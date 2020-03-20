@@ -56,27 +56,22 @@
 
 
   <!-- Start header section -->
-  <header id="aa-header">
+  <header id="aa-header"  style="border-bottom: solid 1px rgba(136,136,136,0.5); ">  
     <div class="container">
-      <div class="row">
+      <div class="row"
         <div class="col-md-12">
           <div class="aa-header-area">
             <div class="row">
               <div class="col-md-6 col-sm-6 col-xs-6">
-                <div class="aa-header-left">
-                  <div class="aa-telephone-no">
-                    <span class="fa fa-phone"></span>
-                    0979401199
-                  </div>
-                  <div class="aa-email hidden-xs">
-                    <span class="fa fa-envelope-o"></span> TrangTTTSE05109@FPT.EDU.VN
-                  </div>
-                </div>
+                <div class="aa-header-right" style="text-align: left;">
+                  <a href="cb-index.html" class="aa-register" style="color: rgb(85,85,85);"><b>HỆ THỐNG ĐĂNG TIN</b></a>
+                  <a href="cs-index.html" class="aa-login" style="color: rgb(85,85,85);"><b>HỆ THỐNG QUẢN LÝ NHÀ ĐANG THUÊ</b></a>  
+                </div>              
               </div>
               <div class="col-md-6 col-sm-6 col-xs-6">
                 <div class="aa-header-right">
-                  <a href="sign-up.html" class="aa-register">Đăng ký</a>
-                  <a href="log-in.html" class="aa-login">Đăng nhập</a>
+                  <a href="sign-up.html" class="aa-register" style="color: rgb(85,85,85);"><b>ĐĂNG KÝ</b></a>
+                  <a href="log-in.html" class="aa-login" style="color: rgb(85,85,85);"><b>ĐĂNG NHẬP</b></a>
                 </div>
               </div>
             </div>
@@ -87,81 +82,46 @@
   </header>
   <!-- End header section -->
   <!-- Start menu section -->
-  <section id="aa-menu-area">
-    <nav class="navbar navbar-default main-navbar" role="navigation">
+  <section id="aa-menu-area" style="background-color: white">
+    <nav class="navbar navbar-default main-navbar" role="navigation" style="border-bottom: solid 2px rgb(136,136,136); ">  
       <div class="container">
         <div class="navbar-header">
           <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-            aria-expanded="false" aria-controls="navbar">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <!-- LOGO -->
+          <!-- LOGO -->                                               
           <!-- Text based logo -->
-          <a class="navbar-brand aa-logo" href="home.html"> Cyber <span>Place</span></a>
-          <!-- Image based logo -->
-          <!-- <a class="navbar-brand aa-logo-img" href="home.html"><img src="img/logo.png" alt="logo"></a> -->
+           <a class="navbar-brand aa-logo" href="cb-index.html"> Cyber <span>Service</span></a>
+           <!-- Image based logo -->
+           <!-- <a class="navbar-brand aa-logo-img" href="index.html"><img src="img/logo.png" alt="logo"></a> -->
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right aa-main-nav">
-            <li class="active"><a href="home.html">Trang Chủ</a></li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" href="bds-cho-thue.html">Bất động sản cho thuê <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="apartment-for-rent.html">Chung cư cho thuê</a></li>
-                <li><a href="apartment-for-rent.html">Nhà riêng cho thuê</a></li>
-                <li><a href="apartment-for-rent.html">Văn phòng cho thuê</a></li>
+			<li>
+				<a class="notification" href="notifications.html"><span class="glyphicon glyphicon-bell"></span> Thông báo<span  class="badge">99</span> </a></li>
+			<li class="dropdown">
+              <a class="dropdown-toggle" href="#"><img alt="Doanh thu" style="width: 25px; border-radius: 50%" src="img/hinh-anh-chat-ngau-dep.jpg"> DucTHSE05016 <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">                
+                <li><a href="#">Đăng xuất</a></li>
               </ul>
             </li>
-            <li><a href="gallery.html">GALLERY</a></li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="blog-archive.html">BLOG <span
-                  class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="blog-archive.html">BLOG</a></li>
-                <li><a href="blog-single.html">BLOG DETAILS</a></li>
-              </ul>
-            </li>
-            <li><a href="contact.html">CONTACT</a></li>
-            <li><a href="404.html">404 PAGE</a></li>
           </ul>
-        </div>
-        <!--/.nav-collapse -->
+        </div><!--/.nav-collapse -->       
       </div>
     </nav>
   </section>
   <!-- End menu section -->
 
-  <!-- Start Proerty header  -->
-
-  <section id="aa-property-header">
+  <section id="aa-properties" style="margin-top: 150px; text-align: center">
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="aa-property-header-inner">
-            <h2>Cyber Service</h2>
-            <ol class="breadcrumb">
-              <li><a href="home.html">Trang Chủ</a></li>
-              <li class="active">Cyber Service</li>
-            </ol>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Proerty header  -->
-
-  <!-- Start Properties  -->
-  <section id="aa-properties">
-    <div class="container">
-      <div class="row ">
-        <!-- Start Quan ly Menu -->
-        <div class="col-md-2">
+      <div class="row" style="padding: 0px;">
+        <div class="col-md-3">
           <div class="panel-group">
-            <div class="panel panel-default">
+            <div class="panel panel-default"  style="background-color: rgb(89, 171,227)">
               <div class="panel-heading">
                 <h4 class="panel-title">
                   <a href="cs-index.html">Quản lý nhà thuê</a>
@@ -171,10 +131,12 @@
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h4 class="panel-title">
-                  <a data-toggle="collapse" href="#collapse1">Quản lý thông báo</a>
+					<a data-toggle="collapse" href="#collapse1" class="" aria-expanded="true">Quản lý thông báo</a>
+<!--                <a data-toggle="collapse" href="#collapse1">Quản lý thông báo</a>-->
                 </h4>
               </div>
-              <div id="collapse1" class="panel-collapse collapse">
+				<div id="collapse1" class="panel-collapse collapse in" aria-expanded="true" style="">
+<!--            <div id="collapse1" class="panel-collapse collapse">-->
                 <ul class="list-group">
                   <li class="list-group-item"><a href="cs-baocao.html">Quản lý báo cáo</a></li>
                   <li class="list-group-item"><a href="cs-payment.html">Thông báo đóng tiền</a></li>
@@ -183,13 +145,12 @@
               </div>
             </div>
           </div>
-
         </div>
-        <!-- End Quan ly Menu -->
-
-        <!-- Start Content -->
-        <div class="col-md-8" class="report-content">
-          <h3>Bạn đang báo cáo hư hại căn hai phòng ngủ tại mỏ than FPT </h3>
+        <!-- Start properties sidebar -->
+        <!-- Start properties sidebar -->
+		<div class="col-md-9" style="padding: 20px; margin: 0px;background-color: rgb(248,248,248);">
+			<div class="aa-properties-content">
+				            <h3>Bạn đang báo cáo hư hại căn hai phòng ngủ tại mỏ than FPT </h3>
           <div><a href="#" class="text-danger">Kiểm tra danh sách thiết bị được bàn giao</a></div>
           <h3>Phiếu yêu cầu sửa chữa </h3>
           <div class="form-group">
@@ -207,14 +168,10 @@
           <div>
             <a href="cs-baocao-success.html"><button type="button" class="btn btn-danger btn-lg">Gửi yêu cầu</button></a>
           </div>
-        </div>
+<!---aaaaaaaa--->
       </div>
-      <!-- End Content -->
-
-    </div>
     </div>
   </section>
-
   <!-- / Properties  -->
   <!-- Footer -->
   <footer id="aa-footer">
