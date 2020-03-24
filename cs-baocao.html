@@ -64,7 +64,7 @@
             <div class="row">
               <div class="col-md-6 col-sm-6 col-xs-6">
                 <div class="aa-header-right" style="text-align: left;">
-                  <a href="cs-index.html" class="aa-register" style="color: rgb(85,85,85);"><b>HỆ THỐNG ĐĂNG TIN</b></a>
+                  <a href="cb-index.html" target="_blank" class="aa-register" style="color: rgb(85,85,85);"><b>HỆ THỐNG ĐĂNG TIN</b></a>
                   <a href="cs-index.html" class="aa-login" style="color: rgb(85,85,85);"><b>HỆ THỐNG QUẢN LÝ NHÀ ĐANG THUÊ</b></a>  
                 </div>              
               </div>
@@ -116,16 +116,17 @@
   </section>
   <!-- End menu section -->
 
+
+  <!-- Start Properties  -->
   <section id="aa-properties" style="margin-top: 150px; text-align: center">
     <div class="container">
-      <div class="row" style="padding: 0px;">
+      <div class="row ">
+        <!-- Start Quan ly Menu -->
         <div class="col-md-3">
           <div class="panel-group">
             <div class="panel panel-default"  style="background-color: rgb(89, 171,227)">
               <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a href="cs-index.html">Quản lý nhà thuê</a>
-                </h4>
+                <h4 class="panel-title"> <a class="active" href="cs-index.html">Quản lý nhà đang thuê</a> </h4>
               </div>
             </div>
             <div class="panel panel-default">
@@ -138,19 +139,19 @@
 				<div id="collapse1" class="panel-collapse collapse in" aria-expanded="true" style="">
 <!--            <div id="collapse1" class="panel-collapse collapse">-->
                 <ul class="list-group">
-                  <li class="list-group-item"><a href="cs-baocao.html">Quản lý báo cáo</a></li>
-                  <li class="list-group-item"><a href="cs-payment.html">Thông báo đóng tiền</a></li>
+                  <li class="list-group-item"><a href="cs-reportmanage.html">Quản lý báo cáo</a></li>
+                  <li class="list-group-item"><a href="cs-payment-manage.html">Thông báo đóng tiền</a></li>
                   <li class="list-group-item"><a href="#">Thông báo khác</a></li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-        <!-- Start properties sidebar -->
-        <!-- Start properties sidebar -->
-		<div class="col-md-9" style="padding: 20px; margin: 0px;background-color: rgb(248,248,248);">
-			<div class="aa-properties-content">
-				            <h3>Bạn đang báo cáo hư hại căn hai phòng ngủ tại mỏ than FPT </h3>
+        <!-- End Quan ly Menu -->
+
+        <!-- Start Content -->
+        <div class="col-md-9" class="report-content" style="padding: 20px; margin: 0px;background-color: rgb(248,248,248); text-align: justify"> 
+          <h3>Bạn đang báo cáo hư hại căn hai phòng ngủ tại mỏ than FPT </h3>
           <div><a href="#" class="text-danger">Kiểm tra danh sách thiết bị được bàn giao</a></div>
           <h3>Phiếu yêu cầu sửa chữa </h3>
           <div class="form-group">
@@ -159,19 +160,23 @@
           </div>
           <div class="form-group">
             <label for="comment">Mô tả tình trạng:</label>
-            <textarea class="form-control" rows="5" id="comment"></textarea>
+            <textarea class="form-control" rows="5" id="comment" style="resize: none"></textarea>
           </div>
           <div class="form-group">
             <label for="attach">Ảnh đính kèm:</label>
-            <button type="button" class="btn btn-default">Chọn tệp</button>
+			  <input type="file" class="custom-file-input">
           </div>
           <div>
             <a href="cs-baocao-success.html"><button type="button" class="btn btn-danger btn-lg">Gửi yêu cầu</button></a>
           </div>
-<!---aaaaaaaa--->
+        </div>
       </div>
+      <!-- End Content -->
+
+    </div>
     </div>
   </section>
+
   <!-- / Properties  -->
   <!-- Footer -->
   <footer id="aa-footer">

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CyberService | Index </title>
+  <title>Cyber Service | Hệ thống quản lý nhà đang thuê</title>
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -55,13 +55,12 @@
 
   <header id="aa-header"  style="border-bottom: solid 1px rgba(136,136,136,0.5); ">  
     <div class="container">
-      <div class="row"
         <div class="col-md-12">
           <div class="aa-header-area">
             <div class="row">
               <div class="col-md-6 col-sm-6 col-xs-6">
                 <div class="aa-header-right" style="text-align: left;">
-                  <a href="cs-index.html" class="aa-register" style="color: rgb(85,85,85);"><b>HỆ THỐNG ĐĂNG TIN</b></a>
+                  <a href="cb-index.html" target="_blank" class="aa-register" style="color: rgb(85,85,85);"><b>HỆ THỐNG ĐĂNG TIN</b></a>
                   <a href="cs-index.html" class="aa-login" style="color: rgb(85,85,85);"><b>HỆ THỐNG QUẢN LÝ NHÀ ĐANG THUÊ</b></a>  
                 </div>              
               </div>
@@ -75,7 +74,6 @@
           </div>
         </div>
       </div>
-    </div>
   </header>
   <!-- End header section -->
   <!-- Start menu section -->
@@ -121,9 +119,7 @@
           <div class="panel-group">
             <div class="panel panel-default"  style="background-color: rgb(89, 171,227)">
               <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a href="cs-index.html">Quản lý nhà thuê 1</a>
-                </h4>
+                <h4 class="panel-title"> <a class="active" href="cs-index.html">Quản lý nhà đang thuê</a> </h4>
               </div>
             </div>
             <div class="panel panel-default">
@@ -136,8 +132,8 @@
 				<div id="collapse1" class="panel-collapse collapse in" aria-expanded="true" style="">
 <!--            <div id="collapse1" class="panel-collapse collapse">-->
                 <ul class="list-group">
-                  <li class="list-group-item"><a href="cs-baocao.html">Quản lý báo cáo</a></li>
-                  <li class="list-group-item"><a href="cs-payment.html">Thông báo đóng tiền</a></li>
+                  <li class="list-group-item"><a href="cs-reportmanage.html">Quản lý báo cáo</a></li>
+                  <li class="list-group-item"><a href="cs-payment-manage.html">Thông báo đóng tiền</a></li>
                   <li class="list-group-item"><a href="#">Thông báo khác</a></li>
                 </ul>
               </div>
@@ -148,10 +144,10 @@
         <!-- Start properties sidebar -->
 		<div class="col-md-9" style="padding: 20px; margin: 0px;background-color: rgb(248,248,248);">
 			<div class="aa-properties-content">
-				  <h2 class="text-left">Số căn đang thuê: <span style="color: red">4</span></h2>				  
-		  <div class="alert alert-danger">
-            <strong>1</strong> căn hộ cần được <a href="#" class="alert-link">thanh toán</a>.
-          </div>
+			<h2 class="text-left" style="border-bottom: solid 1px;">Quản lý nhà đang thuê</h2>	
+			<h3 align="left" class="text-success">Số căn bạn đang thuê: <b>4</b></h3>
+
+		  <div class="alert alert-danger"><strong>3</strong> căn hộ cần được <a href="#" class="alert-link">thanh toán</a>. </div>
             <!-- start properties content head -->
 			<div class="aa-properties-content-head">
               <div class="aa-properties-content-head-left">
@@ -164,25 +160,26 @@
                     <option value="4">Ngày đăng</option>
                   </select>
                 </form>
-              </div>
-              <div class="aa-properties-content-head-right">
-                <a id="aa-grid-properties" href="#"><span class="fa fa-th"></span></a>
-                <a id="aa-list-properties" href="#"><span class="fa fa-list"></span></a>
-              </div>
+              </div>				
+			  <div class="aa-properties-content-head-right" style="width: 40%">
+				  <table>
+				  	<tr>
+						<td style="width: 90%"><input class="form-control" type="text" placeholder="Tên nhà" aria-label="Search"></td>  
+						<td><button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button></td>
+					</tr>
+				  </table>
+              </div> 
             </div>
             <!-- Start properties content body -->				
             <div class="aa-properties-content-body">
               <ul class="aa-properties-nav">
                 <li>
                   <article class="aa-properties-item"> <a class="aa-properties-item-img" href="cs-xemchitiet.html">
-                      <img alt="img" src="img/item/3.jpg">
+                      <img alt="img" src="img/item/5.jpg">
                     </a>
                     <div class="aa-properties-item-content">
                       <div class="aa-properties-info">
-                        <span>5 Rooms</span>
-                        <span>2 Beds</span>
-                        <span>3 Baths</span>
-                        <span>1100 SQ FT</span>
+                        <a href="cs-baocao.html"><button type="button" class="btn btn-warning">Báo cáo hư hại</button></a>
                       </div>
                       <div class="aa-properties-about">
                         <h3><a href="cs-xemchitiet.html">Biệt thự vùng ven biển Hòa Lạc</a></h3>
@@ -190,44 +187,47 @@
                         <p>Thời hạn đóng tiền kế tiếp còn : <strong class="text-danger">Hết hạn</strong></p>
                       </div>
                       <div class="aa-properties-detial">
-                      <a href="cs-xemchitiet.html"><button type="button" class="btn btn-primary btn-lg">Xem chi tiết</button></a>
-                      <button type="button" class="btn btn-primary btn-lg btn-danger">Thanh toán ngay</button>
+						  <table>
+						  	<tr>  
+								<td><a href="cs-payment.html"><button type="button" class="btn btn-danger">Thanh toán ngay</button></a></td>
+								<td><a href="cs-xemchitiet.html"><button type="button" class="btn btn-info">Xem chi tiết</button></a></td>
+							</tr>
+						  </table>
                     </div>
                     </div>
                   </article>
                 </li>
                 <li>
                   <article class="aa-properties-item"> <a class="aa-properties-item-img" href="cs-xemchitiet.html">
-                      <img alt="img" src="img/item/3.jpg">
+                      <img alt="img" src="img/item/4.jpg">
                     </a>
                     <div class="aa-properties-item-content">
                       <div class="aa-properties-info">
-                        <span>5 Rooms</span>
-                        <span>2 Beds</span>
-                        <span>3 Baths</span>
-                        <span>1100 SQ FT</span>
+                        <a href="cs-baocao.html"><button type="button" class="btn btn-warning">Báo cáo hư hại</button></a>
                       </div>
                       <div class="aa-properties-about">
                         <h3><a href="cs-xemchitiet.html">Căn hộ mỏ than <i class="fas fa-tachometer-alt-average    "></i></a></h3>
                         <p>Thời hạn còn lại của hợp đồng : 3 tháng 5 ngày </p>
                         <p>Thời hạn đóng tiền kế tiếp còn : <strong class="text-danger">5 ngày</strong></p>
                       </div>
-                      <div class="aa-properties-detial">
-                      <a href="cs-xemchitiet.html"><button type="button" class="btn btn-primary btn-lg">Xem chi tiết</button></a>
+                      <div class="aa-properties-detial">                      
+						  <table>
+						  	<tr>  
+								<td><a href="cs-payment.html"><button type="button" class="btn btn-danger">Thanh toán ngay</button></a></td>
+								<td><a href="cs-xemchitiet.html"><button type="button" class="btn btn-info">Xem chi tiết</button></a></td>
+							</tr>
+						  </table>
                     </div>
                     </div>
                   </article>
                 </li>
 				  <li>
                   <article class="aa-properties-item"> <a class="aa-properties-item-img" href="cs-xemchitiet.html">
-                      <img alt="img" src="img/item/3.jpg">
+                      <img alt="img" src="img/item/6.jpg">
                     </a>
                     <div class="aa-properties-item-content">
                       <div class="aa-properties-info">
-                        <span>5 Rooms</span>
-                        <span>2 Beds</span>
-                        <span>3 Baths</span>
-                        <span>1100 SQ FT</span>
+                        <a href="cs-baocao.html"><button type="button" class="btn btn-warning">Báo cáo hư hại</button></a>
                       </div>
                       <div class="aa-properties-about">
                         <h3><a href="cs-xemchitiet.html">Biệt thự vùng ven biển Hòa Lạc</a></h3>
@@ -235,31 +235,35 @@
                         <p>Thời hạn đóng tiền kế tiếp còn : <strong class="text-danger">Hết hạn</strong></p>
                       </div>
                       <div class="aa-properties-detial">
-                      <a href="cs-xemchitiet.html"><button type="button" class="btn btn-primary btn-lg">Xem chi tiết</button></a>
-                      <button type="button" class="btn btn-primary btn-lg btn-danger">Thanh toán ngay</button>
+						  <table>
+						  	<tr>  
+								<td><a href="cs-payment.html"><button type="button" class="btn btn-danger">Thanh toán ngay</button></a></td>
+								<td><a href="cs-xemchitiet.html"><button type="button" class="btn btn-info">Xem chi tiết</button></a></td>
+							</tr>
+						  </table>
                     </div>
                     </div>
                   </article>
                 </li>
 				  <li>
                   <article class="aa-properties-item"> <a class="aa-properties-item-img" href="cs-xemchitiet.html">
-                      <img alt="img" src="img/item/3.jpg">
+                      <img alt="img" src="img/item/1.jpg">
                     </a>
                     <div class="aa-properties-item-content">
                       <div class="aa-properties-info">
-                        <span>5 Rooms</span>
-                        <span>2 Beds</span>
-                        <span>3 Baths</span>
-                        <span>1100 SQ FT</span>
+                        <a href="cs-baocao.html"><button type="button" class="btn btn-warning">Báo cáo hư hại</button></a>
                       </div>
                       <div class="aa-properties-about">
                         <h3><a href="cs-xemchitiet.html">Biệt thự vùng ven biển Hòa Lạc</a></h3>
                         <p>Thời hạn còn lại của hợp đồng : 3 tháng 5 ngày </p>
-                        <p>Thời hạn đóng tiền kế tiếp còn : <strong class="text-danger">Hết hạn</strong></p>
+                        <p>Thời hạn đóng tiền kế tiếp còn : <strong class="text-success">20 ngày</strong></p>
                       </div>
                       <div class="aa-properties-detial">
-                      <a href="cs-xemchitiet.html"><button type="button" class="btn btn-primary btn-lg">Xem chi tiết</button></a>
-                      <button type="button" class="btn btn-primary btn-lg btn-danger">Thanh toán ngay</button>
+						  <table>
+						  	<tr>  
+								<td><a href="cs-xemchitiet.html"><button type="button" class="btn btn-info">Xem chi tiết</button></a></td>
+							</tr>
+						  </table>
                     </div>
                     </div>
                   </article>
