@@ -115,98 +115,84 @@
     <div class="container">
       <div class="row" style="padding: 0px;">
 		  <div class="col-md-12">
-		    <div class="col-md-3">
-          		<div class="aa-properties-content">            
-            <!-- Start properties content body -->
-			  <div class="vertical-menu">
-				  <a href="cb-dangtin.html" class="active">Đăng tin</a>
-				  <a href="cb-quanlytindadang.html">Quản lý tin đã đăng</a>
-				  <a href="cb-nhadangtrentrang.html">Nhà đang trên trang</a>
-				  <a href="cb-nhadangchothue.html">Nhà đang cho thuê</a>
-				  <a href="cb-doanhthu.html">Doanh thu</a>
-				  <a href="cb-thongbao.html">Thông báo</a>
-				</div>
+		<div class="col-md-3">
+          <div class="panel-group">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title"> <a class="active" href="cb-dangtin.html">Đăng tin</a> </h4>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title"> <a class="active" href="cb-quanlytindadang.html">Quản lý tin đã đăng</a> </h4>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title"> <a class="active" href="cb-nhadangtrentrang.html">Nhà đang trên trang</a> </h4>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title"> <a class="active" href="cb-nhadangchothue.html">Nhà đang cho thuê</a> </h4>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title"> <a class="active" href="cb-doanhthu.html">Doanh thu</a> </h4>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title"> <a class="active" href="cb-thongbao.html">Thông báo</a> </h4>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- Start properties sidebar -->
         <!-- Start properties sidebar -->
 		<div class="col-md-9" style="padding: 20px; margin: 0px;background-color: rgb(248,248,248);">
 			 <div class="aa-properties-single-sidebar">
 				<h2 class="text-left" style="border-bottom: solid 1px;">Thông tin cơ bản</h2> <br>
 				<form action="" style="padding-left: 50px" name="thong-tin-co-ban">
-					<table style="width: 100%; font-size: 14px;">
+					<table style="width: 100%; font-size: 14px;" cellpadding="10">
 						<tr>
-							<th style="line-height: 50px; width: 150px">Tiêu đề (*): </th>
-							<td><input style="width: 233%" type="text" placeholder="Tên bất động sản" maxlength="90"></td>
+							<th>Tiêu đề (*): </th>
+							<td><input type="text" class="form-control" id="usr"></td>
 						</tr>
 						<tr>
-							<th style="line-height: 50px">Loại nhà đất (*): </th>
-							<td>
-								<div class="aa-advance-search-area">
-									<div class="form">
-										<div class="aa-advance-search-top">
-											<div class="row">
-												<div class="col-md-2">
-													<div class="aa-single-advance-search">
-													  <select style="width: 200px" id="loai-nha-dat">
-													   <option value="0" selected="">Chung cư</option>
-														<option value="1">Nhà riêng</option>
-														<option value="2">Văn phòng</option>	
-													  </select>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
+							<th>Loại nhà đất (*): </th>
+							<td>							
+								<div class="form-group">
+										<select id="type" class="form-control">
+										  <option>Chung cư</option>
+										  <option>Nhà đất</option>
+										</select> 
 								</div>
 							</td>
 						</tr>
 						<tr>
-							<th style="line-height: 50px">Tỉnh/Thành phố: </th>
-							<td style="width: 200px">
-								<div class="aa-advance-search-area" style="width: 200px">
-									<div class="form" style="width: 200px">
-										<div class="aa-advance-search-top" style="width: 200px">
-											<div class="row" style="width: 200px">
-												<div class="col-md-2">
-													<div class="aa-single-advance-search">
-													  <select style="width: 200px" id="tinh-thanhpho">
-													   <option value="0" selected="">Hà Nội</option>
-														<option value="1">Tp.Hồ Chí Minh</option>
-														<option value="2">Hưng Yên</option>
-														<option value="3">Thanh Hóa</option>
-													  </select>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
+							<th>Tỉnh/Thành phố: </th>
+							<td style="width: 200px">							
+								<div class="form-group">
+										<select id="city" class="form-control">
+										  <option>Hà Nội</option>
+										  <option>Hồ Chí Minh</option>
+										</select> 
 								</div>
 							</td>
-							<th style="line-height: 50px; width: 100px">Quận/huyện: </th>
-							<td style="width: 200px">
-								<div class="aa-advance-search-area" style="width: 200px">
-									<div class="form" style="width: 200px">
-										<div class="aa-advance-search-top" style="width: 200px">
-											<div class="row" style="width: 200px">
-												<div class="col-md-2">
-													<div class="aa-single-advance-search">
-													  <select style="width: 200px" id="quan-huyen">
-													   <option value="0" selected="">Thanh Xuân</option>
-														<option value="1">Hai Bà Trưng</option>
-														<option value="2">Cầu Giấy</option>
-													  </select>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
+							<th style="width: 100px">Quận/huyện: </th>
+							<td style="width: 200px">							
+								<div class="form-group">
+										<select id="district" class="form-control">
+										  <option>Thanh Xuân</option>
+										  <option>Tây Hồ</option>
+										  <option>Hà Đông</option>
+										</select> 
 								</div>
 							</td>
 						</tr>
 						<tr>
-							<th style="line-height: 50px">Phường/xã: </th>
-
+							<th>Phường/xã: </th>
 								<td style="width: 200px">
 									<div class="aa-advance-search-area" style="width: 200px">
 										<div class="form" style="width: 200px">
@@ -226,7 +212,7 @@
 										</div>
 									</div>
 								</td>
-							<th style="line-height: 50px">Đường/phố: </th>
+							<th>Đường/phố: </th>
 								<td style="width: 200px">
 									<div class="aa-advance-search-area" style="width: 200px">
 										<div class="form" style="width: 200px">
@@ -248,7 +234,7 @@
 								</td>
 						</tr>
 						<tr>
-							<th style="line-height: 50px">Diện tích: </th>
+							<th>Diện tích: </th>
 							<td>
 								<div class="aa-advance-search-area">
 									<div class="form">
@@ -266,7 +252,7 @@
 							</td>
 						</tr>
 						<tr>
-							<th style="line-height: 50px">Giá: </th>
+							<th>Giá: </th>
 							<td>
 								<div class="aa-advance-search-area">
 									<div class="form">
@@ -284,7 +270,7 @@
 							</td>
 						</tr>
 						<tr>
-							<th style="line-height: 50px; width: 150px">Địa chỉ cụ thể: </th>
+							<th style="width: 150px">Địa chỉ cụ thể: </th>
 							<td colspan="3">
 								<div class="aa-advance-search-area">
 									<div class="form">
