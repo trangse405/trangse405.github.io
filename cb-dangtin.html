@@ -59,7 +59,7 @@
               <div class="col-md-6 col-sm-6 col-xs-6">
                 <div class="aa-header-right" style="text-align: left;">
                   <a href="cb-index.html" class="aa-register" style="color: rgb(85,85,85);"><b>HỆ THỐNG ĐĂNG TIN</b></a>
-                  <a href="cs-index.html" class="aa-login" style="color: rgb(85,85,85);"><b>HỆ THỐNG QUẢN LÝ NHÀ ĐANG THUÊ</b></a>
+                  <a href="cs-index.html" class="aa-login" style="color: rgb(85,85,85);"><b>HỆ THỐNG QUẢN LÝ NHÀ ĐANG THUÊ</b></a>  
                 </div>              
               </div>
               <div class="col-md-6 col-sm-6 col-xs-6">
@@ -111,7 +111,7 @@
   <!-- End menu section -->
 
   <!-- Start Properties  -->
-  <section id="aa-properties" style="margin-top: 10%; text-align: center">
+  <section id="aa-properties" style="margin-top: 150px; text-align: center">
     <div class="container">
       <div class="row" style="padding: 0px;">
 		  <div class="col-md-12">
@@ -153,17 +153,18 @@
 		<div class="col-md-9" style="padding: 20px; margin: 0px;background-color: rgb(248,248,248);">
 			 <div class="aa-properties-single-sidebar">
 				<h2 class="text-left" style="border-bottom: solid 1px;">Thông tin cơ bản</h2> <br>
-				<form action="" style="padding-left: 50px" name="thong-tin-co-ban">
+				<form action="" name="thong-tin-co-ban">
 					<table style="width: 100%; font-size: 14px;" cellpadding="10">
 						<tr>
-							<th>Tiêu đề (*): </th>
-							<td><input type="text" class="form-control" id="usr"></td>
+							<th style="width: 20%">Tiêu đề (*): </th>
+							<td><input type="text" class="form-control" id="title"></td>
 						</tr>
 						<tr>
 							<th>Loại nhà đất (*): </th>
 							<td>							
 								<div class="form-group">
 										<select id="type" class="form-control">
+										  <option selected>-- Loại nhà đất --</option>
 										  <option>Chung cư</option>
 										  <option>Nhà đất</option>
 										</select> 
@@ -172,18 +173,22 @@
 						</tr>
 						<tr>
 							<th>Tỉnh/Thành phố: </th>
-							<td style="width: 200px">							
+							<td>							
 								<div class="form-group">
 										<select id="city" class="form-control">
+										  <option selected>-- Tỉnh/Thành phố --</option>
 										  <option>Hà Nội</option>
 										  <option>Hồ Chí Minh</option>
 										</select> 
 								</div>
 							</td>
-							<th style="width: 100px">Quận/huyện: </th>
-							<td style="width: 200px">							
+						</tr>
+						<tr>
+							<th>Quận/huyện: </th>
+							<td>							
 								<div class="form-group">
 										<select id="district" class="form-control">
+										  <option selected>-- Quận/huyện --</option>
 										  <option>Thanh Xuân</option>
 										  <option>Tây Hồ</option>
 										  <option>Hà Đông</option>
@@ -193,272 +198,110 @@
 						</tr>
 						<tr>
 							<th>Phường/xã: </th>
-								<td style="width: 200px">
-									<div class="aa-advance-search-area" style="width: 200px">
-										<div class="form" style="width: 200px">
-											<div class="aa-advance-search-top" style="width: 200px">
-												<div class="row" style="width: 200px">
-													<div class="col-md-2">
-														<div class="aa-single-advance-search">
-														  <select style="width: 200px" id="phuong-xa">
-														   <option value="0" selected="">Thanh Xuân Bắc</option>
-															<option value="1">Khương Đình</option>
-															<option value="2">Triều Khúc</option>
-														  </select>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</td>
+							<td>							
+								<div class="form-group">
+										<select id="ward" class="form-control">
+										  <option selected>-- Phường/xã--</option>
+										  <option>Triều Khúc</option>
+										  <option>Thanh Xuân Bắc</option>
+										  <option>Khương Đình</option>
+										</select> 
+								</div>
+							</td>
+						</tr>
+						<tr>
 							<th>Đường/phố: </th>
-								<td style="width: 200px">
-									<div class="aa-advance-search-area" style="width: 200px">
-										<div class="form" style="width: 200px">
-											<div class="aa-advance-search-top" style="width: 200px">
-												<div class="row" style="width: 200px">
-													<div class="col-md-2">
-														<div class="aa-single-advance-search">
-														  <select style="width: 200px" id="duong-pho">
-														   <option value="0" selected="">Nguyễn Trãi</option>
-															<option value="1">Thượng Đình</option>
-															<option value="2">Nguyễn Tuân</option>
-														  </select>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
+								<td>							
+								<div class="form-group">
+										<select id="street" class="form-control">
+										  <option selected>-- Đường/phố --</option>
+										  <option>Nguyễn Trãi</option>
+										  <option>Nguyễn Tuân</option>
+										</select> 
+								</div>
 								</td>
 						</tr>
 						<tr>
 							<th>Diện tích: </th>
-							<td>
-								<div class="aa-advance-search-area">
-									<div class="form">
-										<div class="aa-advance-search-top">
-											<div class="row">
-												<div class="col-md-4">
-													<div class="aa-single-advance-search">
-														<input style="width: 200px" type="number" placeholder=" Diện tích m²" min="0"> 
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</td>
+							<td><input class="form-control" id="area" placeholder=" Diện tích m²" min="0" type="number" ></td>
 						</tr>
 						<tr>
 							<th>Giá: </th>
-							<td>
-								<div class="aa-advance-search-area">
-									<div class="form">
-										<div class="aa-advance-search-top">
-											<div class="row">
-												<div class="col-md-4">
-													<div class="aa-single-advance-search">
-														<input style="width: 200px" type="number" placeholder=" VNĐ (Việt Nam đồng)" min="0"> 
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</td>
+							<td><input class="form-control" id="price" placeholder=" Giá" min="0" type="number" ></td>
 						</tr>
 						<tr>
-							<th style="width: 150px">Địa chỉ cụ thể: </th>
-							<td colspan="3">
-								<div class="aa-advance-search-area">
-									<div class="form">
-										<div class="aa-advance-search-top">
-											<div class="row">
-												<div class="col-md-4">
-													<div class="aa-single-advance-search">
-														<input style="width: 573px" type="text" placeholder=" Số nhà - Tòa nhà - . . . .">
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</td>
+							<th>Địa chỉ cụ thể: </th>
+							<td><input class="form-control" id="place" placeholder=" Số nhà - Tòa nhà" min="0" type="text" ></td>
 						</tr>
 					</table>
 				 </form>
 				 <br><br>
 				 <h2 class="text-left" style="border-bottom: solid 1px;">Thông tin mô tả</h2> <br>
-				 <p style="text-align: left; color: rgb(162,162,162); padding-left: 10px">(*) Tối đa 3000 ký tự.</p>
-				 <form action="" style="padding-left: 10px" name="thong-tin-mo-ta">
+				 <p style="text-align: left; color: rgb(162,162,162);">(*) Tối đa 3000 ký tự.</p>
+				 <form action="" name="thong-tin-mo-ta">
 					 <table>
-					 	<th style="width: 500px"><textarea rows="5" cols="58" maxlength="3000" style="resize: none"></textarea></th>
-						<td style="width: 300px"><p style="text-align: left"> <b>Giới thiệu chung về bất động sản của bạn.</b> <br>Ví dụ: <b>Khu nhà có vị trí thuận lợi</b><br>&emsp;&emsp;&emsp;<b>Gần công viên, gần trường học, . . . </b><br>&emsp;&emsp;&emsp;<b>Tổng diện tích ...m², đường đi ô tô &emsp;&emsp;&emsp;tận cửa, ...</b></p></td>
+						 <tr>
+							<th><textarea class="form-control" rows="5" cols="80" id="comment" style="resize: none"></textarea></th>
+							<td><p class="text-justify"><strong>Giới thiệu chung về bất động sản của bạn.</strong></p>
+							  <p class="text-justify">Ví dụ:<strong> Khu nhà có vị trí thuận lợi Gần công viên, </strong></p>
+							  <p class="text-justify"><strong>gần trường học, . . . Tổng diện tích ...m², đường đi ô tô tận cửa, ... </strong></p></td>
+						 </tr>
 					 </table>
 				 </form>
 				 <br><br>
 				 <h2 class="text-left" style="border-bottom: solid 1px;">Thông tin khác</h2> <br>
-				 <p style="text-align: left; color: rgb(162,162,162); padding-left: 10px">Quý vị nên điền đầy đủ thông tin vào các mục dưới đây để đăng tin có hiệu quả hơn.</p>
-				 <form action="" style="padding-left: 50px" name="thong-tin-khac">
+				 <p style="text-align: left; color: rgb(162,162,162)">Quý vị nên điền đầy đủ thông tin vào các mục dưới đây để đăng tin có hiệu quả hơn.</p>
+				 <form action=""  name="thong-tin-khac">
 					 <table style="width: 100%">
 							<tr>
 								<th style="line-height: 50px; width: 140px">Mặt tiền(m): </th>
-								<td style="width: 200px">
-									<div class="aa-advance-search-area" style="width: 200px">
-										<div class="form" style="width: 200px">
-											<div class="aa-advance-search-top" style="width: 200px">
-												<div class="row" style="width: 200px">
-													<div class="col-md-2">
-														<div class="aa-single-advance-search">
-															<input style="width: 200px" type="number" placeholder=" . . . m²" min="0"> 
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</td> 
-							<th style="line-height: 50px; width: 150px">Đường vào(m): </th>
-								<td style="width: 200px">
-									<div class="aa-advance-search-area" style="width: 200px">
-										<div class="form" style="width: 200px">
-											<div class="aa-advance-search-top" style="width: 200px">
-												<div class="row" style="width: 200px">
-													<div class="col-md-2">
-														<div class="aa-single-advance-search">
-															<input style="width: 200px" type="number" placeholder=" . . . m²" min="0"> 
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td><input class="form-control" id="mat-tien" min="0" type="number" placeholder="5"></td>
+						 	</tr>
+						 	<tr>
+								<th style="line-height: 50px; width: 150px">Đường vào(m): </th>
+								<td><input class="form-control" id="duong-vao" min="0" type="number" placeholder="10"></td>
 						</tr>
 						 <tr>
 							<th style="line-height: 50px; width: 140px">Hướng nhà: </th>
-								<td style="width: 200px">
-									<div class="aa-advance-search-area" style="width: 200px">
-										<div class="form" style="width: 200px">
-											<div class="aa-advance-search-top" style="width: 200px">
-												<div class="row" style="width: 200px">
-													<div class="col-md-2">
-														<div class="aa-single-advance-search">
-															<input style="width: 200px" type="text" placeholder=" Đông - Tây - . . . "> 
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</td> 
+							<td><input class="form-control" id="huong-nha" type="text" placeholder="Đông - Bắc"></td> 
+						 </tr>
+						 <tr>
 							<th style="line-height: 50px; width: 150px">Hướng ban công: </th>
-								<td style="width: 200px">
-									<div class="aa-advance-search-area" style="width: 200px">
-										<div class="form" style="width: 200px">
-											<div class="aa-advance-search-top" style="width: 200px">
-												<div class="row" style="width: 200px">
-													<div class="col-md-2">
-														<div class="aa-single-advance-search">
-															<input style="width: 200px" type="text"> 
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</td>
+							<td><input class="form-control" id="huong-ban-cong" type="text" ></td> 
 						</tr>
 						 <tr>
 							<th style="line-height: 50px; width: 140px">Số tầng: </th>
-								<td style="width: 200px">
-									<div class="aa-advance-search-area" style="width: 200px">
-										<div class="form" style="width: 200px">
-											<div class="aa-advance-search-top" style="width: 200px">
-												<div class="row" style="width: 200px">
-													<div class="col-md-2">
-														<div class="aa-single-advance-search">
-															<input style="width: 200px" type="number" min="0"> 
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</td> 
+								<td><input class="form-control" id="so-tang" min="0" type="number" ></td> 
 						</tr>
 						 <tr>
 							<th style="line-height: 50px; width: 140px">Số phòng ngủ:  </th>
-								<td style="width: 200px">
-									<div class="aa-advance-search-area" style="width: 200px">
-										<div class="form" style="width: 200px">
-											<div class="aa-advance-search-top" style="width: 200px">
-												<div class="row" style="width: 200px">
-													<div class="col-md-2">
-														<div class="aa-single-advance-search">
-															<input style="width: 200px" type="number" min="0"> 
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</td> 
+								<td><input class="form-control" id="so-phong-ngu" min="0" type="number" ></td>
+						 </tr>
+						 <tr>
 							<th style="line-height: 50px; width: 150px">Số toilet: </th>
-								<td style="width: 200px">
-									<div class="aa-advance-search-area" style="width: 200px">
-										<div class="form" style="width: 200px">
-											<div class="aa-advance-search-top" style="width: 200px">
-												<div class="row" style="width: 200px">
-													<div class="col-md-2">
-														<div class="aa-single-advance-search">
-															<input style="width: 200px" type="number" min="0"> 
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</td>
+								<td><input class="form-control" id="so-toilet" min="0" type="number" ></td>
 						</tr>
 					 </table>
 				 	 <table>
 				 		<tr>
 						 <th style="line-height: 50px; width: 160px; vertical-align: top">Nội thất:</th>
 							<td style="line-height: 50px;">
-								<table style="border: 1px solid; width: 600px; background-color: white;">
-									<tr style="border: 1px solid; text-align: center">
-										<th style="border: 1px solid; text-align: center; width: 200px">Tên thiết bị</th>
-										<th style="border: 1px solid; text-align: center; width: 200px">Số lượng</th>
-										<th style="border: 1px solid; text-align: center; width: 200px">Đơn giá</th>
-									</tr>
-									<tr style="border: 1px solid; text-align: center">
-										<td style="border: 1px solid; text-align: center; width: 200px" contenteditable="true"> 
-															<input style="width: 200px; text-align: center" type="text" value="Điều hòa"> </td>
-										<td style="border: 1px solid; text-align: center; width: 200px" contenteditable="true"> 
-															<input style="width: 200px; text-align: center" type="number" min="0" value="2"> </td>
-										<td style="border: 1px solid; text-align: center; width: 200px" contenteditable="true"> 
-															<input style="width: 200px; text-align: center" type="text" value="5.700.000"> </td>
-									</tr>
-									<tr style="border: 1px solid; text-align: center">
-										<td style="border: 1px solid; text-align: center; width: 200px" contenteditable="true"> 
-															<input style="width: 200px; text-align: center" type="text" value="Điều hòa"> </td>
-										<td style="border: 1px solid; text-align: center; width: 200px" contenteditable="true"> 
-															<input style="width: 200px; text-align: center" type="number" min="0" value="2"> </td>
-										<td style="border: 1px solid; text-align: center; width: 200px" contenteditable="true"> 
-															<input style="width: 200px; text-align: center" type="text" value="5.700.000"> </td>
-									</tr>
-									<tr style="border: 1px solid; text-align: center">
-										<td style="border: 1px solid; text-align: center; width: 200px" contenteditable="true"> 
-															<input style="width: 200px; text-align: center" type="text" value="Điều hòa"> </td>
-										<td style="border: 1px solid; text-align: center; width: 200px" contenteditable="true"> 
-															<input style="width: 200px; text-align: center" type="number" min="0" value="2"> </td>
-										<td style="border: 1px solid; text-align: center; width: 200px" contenteditable="true"> 
-															<input style="width: 200px; text-align: center" type="text" value="5.700.000"> </td>
-									</tr>
-								</table>
+								  <table class="table table-bordered" style="background-color: white;">
+									<thead>
+									  <tr>
+										<th>Tên thiết bị</th>
+										<th>Số lượng</th>
+										<th>Đơn giá</th>
+									  </tr>
+									</thead>
+									<tbody>
+									  <tr>
+										<td contenteditable="true"><input style="width: 100%; border: 0px" type="text" value="Điều hòa"></td>
+										<td contenteditable="true"><input style="width: 100%; border: 0px" type="number" min="0" value="2"></td>
+										<td contenteditable="true"><input style="width: 100%; border: 0px" type="text" min="0" value="5.700.000"></td>
+									  </tr>
+									</tbody>
+								  </table>
 							</td>
 						</tr>
 					</table>
@@ -480,8 +323,8 @@
 				 <br><br>
 				 <h2 class="text-left" style="border-bottom: solid 1px;">Bản đồ</h2> <br>
 				 <p style="text-align: justify; color: rgb(162,162,162); padding-left: 10px">Để tăng độ tin cậy và tin rao được nhiều người quan tâm hơn, hãy sửa vị trí tin rao của bạn trên bản đồ bằng cách <span style="color: red">Chọn lại vị trí bản đồ</span></p>
-					<div id="map" style="width:835px;height:500px;">
-				 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.4822058511195!2d105.52509761548346!3d21.01338329367761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454b32ca5086d%3A0xa3c62e29d8ab37e4!2sFPT%20University!5e0!3m2!1sen!2s!4v1583653056481!5m2!1sen!2s" width="835px" height="500px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+					<div id="map" style="width:100%;height:500px;">
+				 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.4822058511195!2d105.52509761548346!3d21.01338329367761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454b32ca5086d%3A0xa3c62e29d8ab37e4!2sFPT%20University!5e0!3m2!1sen!2s!4v1583653056481!5m2!1sen!2s" width="100%" height="500px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 				 	</div><br>
 				 <p style="text-align: justify; color: rgb(162,162,162); padding-left: 10px">Có thể dữ liệu bản đồ không chính xác. Vì vậy nếu có bất kỳ sai xót nào xin bạn hãy báo cho chúng tôi để khắc phục kịp thời.</p>
 				 
@@ -491,75 +334,19 @@
 				 	<table style="width: 100%; font-size: 14px;">
 						<tr>
 							<th style="line-height: 50px; width: 150px">Tên liên hệ: </th>
-							<td>
-								<div class="aa-advance-search-area">
-									<div class="form">
-										<div class="aa-advance-search-top">
-											<div class="row">
-												<div class="col-md-4">
-													<div class="aa-single-advance-search">
-														<input style="width: 573px" type="text" placeholder="Tên liên hệ" maxlength="90">
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</td>
+							<td><input class="form-control" id="ten-lien-he" placeholder="Tên liên hệ" type="text"></td>
 						</tr>
 						<tr>
 							<th style="line-height: 50px; width: 150px">Địa chỉ: </th>
-							<td>
-								<div class="aa-advance-search-area">
-									<div class="form">
-										<div class="aa-advance-search-top">
-											<div class="row">
-												<div class="col-md-4">
-													<div class="aa-single-advance-search">
-														<input style="width: 573px" type="text" placeholder="Địa chỉ" maxlength="90">
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</td>
+							<td><input class="form-control" id="dia-chi" placeholder="Địa chỉ" type="text"></td>
 						</tr>
 						<tr>
 							<th style="line-height: 50px; width: 150px">Số điện thoại: </th>
-							<td>
-								<div class="aa-advance-search-area">
-									<div class="form">
-										<div class="aa-advance-search-top">
-											<div class="row">
-												<div class="col-md-4">
-													<div class="aa-single-advance-search">
-														<input style="width: 200px" type="tel" placeholder="09xx-xxx-xxx">
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</td>
+							<td><input class="form-control" id="phone" placeholder="09xx xxx xxx" type="tel" ></td>
 						</tr>
 						<tr>
 							<th style="line-height: 50px; width: 150px">Email: </th>
-							<td>
-								<div class="aa-advance-search-area">
-									<div class="form">
-										<div class="aa-advance-search-top">
-											<div class="row">
-												<div class="col-md-4">
-													<div class="aa-single-advance-search">
-														<input style="width: 200px" type="email" placeholder="09xx-xxx-xxx">
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</td>
+							<td><input class="form-control" id="email" placeholder="abc@gmail.com" type="email" ></td>
 						</tr>
 						</table>
 				 </form>
@@ -570,38 +357,11 @@
 							<table>
 								<tr>
 									<th style="width: 150px">Ngày bắt đầu: </th>
-									<th>								
-										<div class="aa-advance-search-area">
-											<div class="form">
-												<div class="aa-advance-search-top">
-													<div class="row">
-														<div class="col-md-4">
-															<div class="aa-single-advance-search">
-																<input style="width: 200px" type="date" name="start-date">
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</th>
-									<th style="width: 30px"></th>
+									<td><input class="form-control" id="start-date" type="date" ></td>
+								</tr>
+								<tr>
 									<th style="width: 150px">Ngày kết thúc: </th>
-									<th>
-										<div class="aa-advance-search-area">
-											<div class="form">
-												<div class="aa-advance-search-top">
-													<div class="row">
-														<div class="col-md-4">
-															<div class="aa-single-advance-search">
-																<input style="width: 200px" type="date" name="end-date">
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</th>
+									<td><input class="form-control" id="end-date" type="date" ></td>
 								</tr>
 							</table>
 					 	</form>
@@ -609,26 +369,15 @@
 				 <br><br>
 				 <h2 class="text-left" style="border-top: solid 1px;"></h2>
 				 <form action="" style="padding-left: 50px" name="submit">
+					 <br>
 					 <table style="width: 100%; font-size: 14px;">
 					 	<tr>
-							<th style="width: 50%"></th> 
+							<th style="width: 70%"></th> 
 							<th>
-								<aside class="aa-properties-sidebar" style="width: 150px; height: 50px; padding-left:40px">	
-									<div class="aa-properties-single-sidebar">	
-										<div class="aa-single-advance-search" style="width: 150px; height: 50px; padding: 0px; margin: 0px">
-										  <input style="text-transform: capitalize; width: 150px" type="submit" value="Đăng tin" class="aa-search-btn">
-										</div>
-									</div>
-								</aside>
+								<button type="submit" class="btn btn-info btn-lg">Đăng Tin</button>
 							</th>
 							<th>
-								<aside class="aa-properties-sidebar" style="width: 150px; height: 50px; padding-left:25px;">	
-									<div class="aa-properties-single-sidebar">	
-										<div class="aa-single-advance-search" style="width: 150px; height: 50px; padding: 0px; margin: 0px; ">
-										  <a href="cb-index.html"><input style="text-transform: capitalize; background-color: rgb(221,88,44); width: 150px" type="button" value="Quay lại" class="aa-search-btn"></a>
-										</div>
-									</div>
-								</aside>
+								<a href="cb-index.html" class="btn btn-danger btn-lg" role="button" aria-pressed="true">Quay Lại</a>
 							</th>
 						</tr>
 					 </table>
