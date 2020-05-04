@@ -111,17 +111,38 @@
   <section id="aa-properties" style="margin-top: 150px; text-align: center">
     <div class="container">
       <div class="row" style="padding: 0px;">
-        <div class="col-md-3">
-          <div class="aa-properties-content">            
-            <!-- Start properties content body -->
-			  <div class="vertical-menu">
-				  <a href="cb-dangtin.html">Đăng tin</a>
-				  <a href="cb-quanlytindadang.html" class="active">Quản lý tin đã đăng</a>
-				  <a href="cb-nhadangtrentrang.html">Nhà đang trên trang</a>
-				  <a href="cb-nhadangchothue.html">Nhà đang cho thuê</a>
-				  <a href="cb-doanhthu.html">Doanh thu</a>
-				  <a href="cb-thongbao.html">Thông báo</a>
-				</div>
+		<div class="col-md-3">
+          <div class="panel-group">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title"> <a class="active" href="cb-dangtin.html">Đăng tin</a> </h4>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title"> <a class="active" href="cb-quanlytindadang.html">Quản lý tin đã đăng</a> </h4>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title"> <a class="active" href="cb-nhadangtrentrang.html">Nhà đang trên trang</a> </h4>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title"> <a class="active" href="cb-nhadangchothue.html">Nhà đang cho thuê</a> </h4>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title"> <a class="active" href="cb-doanhthu.html">Doanh thu</a> </h4>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title"> <a class="active" href="cb-thongbao.html">Thông báo</a> </h4>
+              </div>
+            </div>
           </div>
         </div>
         <!-- Start properties sidebar -->
@@ -130,28 +151,36 @@
 			<div class="aa-properties-content">
 				  <h2 class="text-left" style="border-bottom: solid 1px;">Quản lý tin đã đăng</h2>
             <!-- start properties content head -->
-            <div class="aa-properties-content-head">              
-              <div class="aa-properties-content-head-right">
+			<div class="aa-properties-content-head">
+              <div class="aa-properties-content-head-left">
                 <form action="" class="aa-sort-form">
-                  <label for="">Lọc</label>
+                  <label for="">Sắp xếp</label>
                   <select name="">
-                    <option value="1" selected="Default">Đang chờ duyệt</option>
+                    <option value="1" selected="Default">Đã duyệt</option>
                     <option value="2">Đang kiểm tra</option>
-                    <option value="3">Đã duyệt</option>
+                    <option value="3">Đang chờ duyệt</option>
                     <option value="4">Đã hủy</option>
                   </select>
                 </form>
-              </div>         
+              </div>				
+			  <div class="aa-properties-content-head-right" style="width: 40%">
+				  <table>
+				  	<tr>
+						<td style="width: 90%"><input class="form-control" type="text" placeholder="Tên nhà" aria-label="Search"></td>  
+						<td><button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button></td>
+					</tr>
+				  </table>
+              </div> 
             </div>
             <!-- Start properties content body -->
             <div class="aa-properties-content-body">
               <ul class="aa-properties-nav aa-list-view">
                 <li>
                   <article class="aa-properties-item">
-                    <a style="width: 200px;" class="aa-properties-item-img" href="details-property.html">
-                      <img src="img/item/6.jpg"  alt="img" style="width: 200px; height: 160px">
+                    <a class="aa-properties-item-img" href="details-property.html">
+                      <img src="img/item/6.jpg"  alt="img">
                     </a>
-                    <div style="width: 637px; background-color:rgba(201,48,44,0.1)" class="aa-properties-item-content">
+                    <div style="background-color:rgba(201,48,44,0.1)" class="aa-properties-item-content">
 						<div class="col-md-7">
                       <div class="aa-properties-about" style="text-align: justify">
                         <h3><a href="details-property.html">Nhà riêng số 1</a></h3>
@@ -178,10 +207,10 @@
 				</li>
                 <li>
                   <article class="aa-properties-item">
-                    <a style="width: 200px;" class="aa-properties-item-img" href="details-property.html">
-                      <img src="img/item/6.jpg"  alt="img" style="width: 200px; height: 160px">
+                    <a class="aa-properties-item-img" href="details-property.html">
+                      <img src="img/item/3.jpg"  alt="img">
                     </a>
-                    <div style="width: 637px; background-color:rgba(91,192,222,0.1)" class="aa-properties-item-content">
+                    <div style="background-color:rgba(91,192,222,0.1)" class="aa-properties-item-content">
 						<div class="col-md-7">
                       <div class="aa-properties-about" style="text-align: justify">
                         <h3><a href="details-property.html">Nhà riêng số 1</a></h3>
@@ -206,10 +235,10 @@
 				</li>                
 				<li>
                   <article class="aa-properties-item">
-                    <a style="width: 200px;" class="aa-properties-item-img" href="details-property.html">
-                      <img src="img/item/6.jpg"  alt="img" style="width: 200px; height: 160px">
+                    <a class="aa-properties-item-img" href="details-property.html">
+                      <img src="img/item/2.jpg"  alt="img">
                     </a>
-                    <div style="width: 637px; background-color:rgba(92,184,92,0.1)" class="aa-properties-item-content">
+                    <div style="background-color:rgba(92,184,92,0.1)" class="aa-properties-item-content">
 						<div class="col-md-7">
                       <div class="aa-properties-about" style="text-align: justify">
                         <h3><a href="details-property.html">Nhà riêng số 1</a></h3>
@@ -234,10 +263,10 @@
 				</li>              
 				<li>
                   <article class="aa-properties-item">
-                    <a style="width: 200px;" class="aa-properties-item-img" href="details-property.html">
-                      <img src="img/item/6.jpg"  alt="img" style="width: 200px; height: 160px">
+                    <a class="aa-properties-item-img" href="details-property.html">
+                      <img src="img/item/1.jpg"  alt="img">
                     </a>
-                    <div style="width: 637px; background-color: rgba(227,227,227,1.00)" class="aa-properties-item-content">
+                    <div style="background-color: rgba(227,227,227,1.00)" class="aa-properties-item-content">
 						<div class="col-md-7">
                       <div class="aa-properties-about" style="text-align: justify">
                         <h3><a href="details-property.html">Nhà riêng số 1</a></h3>
